@@ -755,7 +755,7 @@ const updateParams = res => {
                         version: Main,
                         minSize: Config.BufferSize,
                         model,
-                        streaming: null != body.stream,
+                        streaming: body.stream, //null != body.stream,
                         abortControl,
                         source: fetchAPI
                     }, Logger);
